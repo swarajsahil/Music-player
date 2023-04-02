@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <section class="navbar">
+            <a class="ham" id="ham"><i class="fa-solid fa-burger"></i></a>
+            <span class="logo"><img src="logo.png" alt="logo"></span>
+            <ul class="nav" id="nav">
+                <li class="nav-item">Home</li>
+                <li class="nav-item">About</li>
+                <li class="nav-item">Playlist</li>
+                <li class="nav-item">Contact</li>
+            </ul>
+        </section>
+        <section class="show">
+            <div class="card-container">
+                <div class="card">
+                    <img class="song-photo" src="https://pagalworldi.com/siteuploads/thumb/sft29/14055_4.jpg" alt="song-photo">
+                    <p class="song-name"></p>
+                    <p class="artist-name"></p>
+                    <span id="small-btn"><i class="fa-solid fa-circle-play"></i></span>
+                    <div class="volume">
+                        <p>Volume:</p>
+                        <input type="range" id="vol">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="control">
+            <div class="timer">
+                <p class="current-time">00:00</p>
+                <input type="range" class="bar" min="0" max="100" value="0" id="myProgressBar">
+                <p class="total-duration" id="dura">00:00</p>
+            </div>
+            <div class="control-btn">
+            <span><i class="fa-solid fa-backward"></i></span>
+            <span id="prev-btn"><i class="fa-solid fa-backward-step"></i></span>
+            <span id="play-btn"><i class="fa-solid fa-circle-play"></i></span>
+            <span id="next-btn"><i class="fa-solid fa-forward-step"></i></span>
+            <span><i class="fa-solid fa-forward"></i></span>
+            <span class="repeat"><i class="fa-solid fa-repeat"></i></span>
+            
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/d97b8b20c2.js" crossorigin="anonymous"></script>
+</body>
+</html>
